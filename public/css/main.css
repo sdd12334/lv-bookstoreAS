@@ -1,0 +1,43 @@
+
+a.prev, a.next {font-size: 10pt; color: #CE7E00; font-weight: bold}
+
+#content { }
+  #content h1 { font-size: 2.4em; font-weight: normal; line-height: 32px; margin: 0px 0 50px 0; }
+  #content p { font-size: 1.4em; line-height: 22px; margin-bottom: 20px; color: black}
+  
+  /* relevant for the book image - start */
+  #productImg{position: center;}
+  #gallery { position: relative; }
+    #pictures { position: relative; width:350; height: auto }
+    #pictures img { position: absolute; width:100%;top: 0; right: 0; left:0 }
+    
+    #prev { margin-top: 450px; text-align: left; font-size: 1em; width:50%}
+	#next { margin-top: 450px;  text-align: right; font-size: 1em; ; width:50%} 
+  /* relevant for the book image - end */
+
+  /* located in demo.css and creates a little calendar icon
+ * instead of a text link for "Choose date"
+ */
+a.dp-choose-date {
+	float: left;
+	width: 16px;
+	height: 16px;
+	padding: 0;
+	margin: 5px 3px 0;
+	display: block;
+	text-indent: -2000px;
+	overflow: hidden;
+	background: url(calendar.png) no-repeat; 
+}
+a.dp-choose-date.dp-disabled {
+	background-position: 0 -20px;
+	cursor: default;
+}
+/* makes the input field shorter once the date picker code
+ * has run (to allow space for the calendar icon
+ */
+input.dp-applied {
+	width: 140px;
+	float: left;
+}
+

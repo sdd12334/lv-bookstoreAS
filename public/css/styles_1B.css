@@ -1,0 +1,286 @@
+*{
+	/* Universal reset: */
+	margin:0;
+	padding:0; 
+}
+
+header,footer,
+article,section,
+hgroup,nav,
+figure{
+	/* Giving a display value to the HTML5 rendered elements: */
+	display:block;
+	margin: 20px;
+}
+
+body{
+	/* Setting the default text color, size, page background and a font stack: */
+	color:black;
+	background-color:black;
+	font-family:Arial, Helvetica, sans-serif;
+	background: url(/images/bookstore.jpg) top center 
+}
+
+/* Hyperlink Styles: */
+header{
+	max-width:1140px;
+	margin: 0 auto;
+	background-color: rgba(255, 255, 255, 0.9);
+	padding:10 10;
+	-moz-box-shadow:0 1px 1px #333333;
+	-webkit-box-shadow:0 1px 1px #333333;
+	box-shadow:0 1px 1px #333333;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
+
+a, a:visited {
+	color:#0196e3;
+	text-decoration:none;
+	outline:none;
+}
+
+a:hover{
+	text-decoration:underline;
+}
+
+a img{
+	border:none;
+}
+
+/* Headings: */
+h1,h2,h3{
+	font-family:"Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
+	text-shadow:0 1px 1px white;
+}
+
+h1{
+	/* The logo text */
+	font-size:3.5em;
+	padding:0.5em 10px 0;
+	text-transform:uppercase;
+}
+
+h3{
+	/* The slogan text */
+	font-family:forte,"Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
+	font-size:2em;
+	font-weight:normal;
+}
+
+h2{
+	font-size:2.2em;
+	font-weight:normal;
+	letter-spacing:0.01em;
+	text-transform:uppercase;
+}
+
+p{
+	font-size:20px;	
+	color:blue;
+	line-height:1.5em;
+	padding-bottom:1em;
+}
+
+/* The dividing line: */
+.line{
+	height:1px;
+	background-color:darkgrey;
+	border-bottom:1px solid #416371;
+	margin:0.5em 0;
+	overflow:hidden;
+}
+
+article .line{
+	/* The dividing line inside of the article is darker: */
+	background-color:#15242a;
+	border-bottom-color:#204656;
+	
+}
+
+footer .line{
+	margin:2em 0;
+}
+
+nav{
+	padding:0 5px;
+	position: relative;
+	border:1px solid #FCFCFC;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	-moz-box-shadow:0 1px 1px #333333;
+	-webkit-box-shadow:0 1px 1px #333333;
+	margin: 0 auto;
+}
+
+/* The clearfix hack to clear the floats: */
+.clear:after{
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+/* The navigation styling: */
+nav ul li{
+	display:inline;
+}
+
+nav ul li a,
+nav ul li a:visited{
+	color:#565656;
+	display:block;
+	float:left;
+	font-size:1.25em;
+	font-weight:bold;
+	margin:5px 2px;
+	padding:7px 10px 4px;
+	text-shadow:0 1px 1px white;
+	text-transform:uppercase;
+}
+
+nav ul li a:hover{
+	text-decoration:none;
+	background-color:#f0f0f0;
+}
+
+nav, article, nav ul li a,figure{
+	/* Applying CSS3 rounded corners: */
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+}
+
+#nav-table{
+	width: 1100px;
+	text-align: center;
+}
+.logo{
+	border:0px;
+	width:180px;
+}
+.icon{
+	border:0px;
+	width:55px;
+}
+nav table tr{
+		vertical-align:bottom;
+}
+
+/* Footer styling: */
+
+footer{
+	text-align:center;
+	font-size:1.0em;
+	color: #fff;
+	background-color: #9e8f8f;
+	border-radius: 10px;
+	max-width: 1140px;
+	height: 30px;
+	margin: 10px auto;
+}
+
+/* Article styles: */
+#page{
+	width:960px;
+	margin:0 auto;
+	position:relative;
+}
+
+form {
+    border: 1px solid #888;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;    
+    -moz-box-shadow: 10px 10px 5px #888;
+    -webkit-box-shadow: 10px 10px 5px #888;
+    box-shadow: 10px 10px 5px #888;
+    background-color: #eee;
+    padding: 10px; margin-bottom: 30px;
+}
+
+#productInfo_currency{
+	border: 0px solid #888;
+	border-radius: 0px;    
+	box-shadow: 0px 0px 0px #888;
+	background-color: #eee;
+	padding: 0px; 
+	margin-bottom: 0px;
+}
+
+#extraInfo{
+	background-color:transparent;
+
+}
+
+#result-img, .thumbnail{
+	height:100px;
+
+}
+
+article{
+	font-size: 1.35em;
+	background-color: rgba(255, 255, 255, 0.9);
+	font-family: Nunito,sans-serif;
+	margin:20px auto;
+	padding:20px;
+	max-width: 1140px;
+	min-width: 600px;
+	text-shadow:1px 1px 0 #ffffff;
+	overflow: auto;
+}
+
+.price, .bookImg{
+	width:150px;
+	text-align: center;
+}
+
+#table-striped{
+	min-width: 500px;
+}
+
+/* zebra striping color 1*/
+.table-striped tbody tr:nth-child(3n) {
+	background-color: rgba(247, 247, 247);	
+}
+
+/* zebra striping color 2*/
+.table-striped tbody tr:nth-child(3n+1) {
+	background-color: rgba(226, 226, 226);
+}
+/* zebra striping color 3*/
+.table-striped tbody tr:nth-child(3n+2) {
+	background-color: rgba(237,237,237);
+}
+
+#submit-btn{
+    letter-spacing: 1px;
+    color: #fff;
+    border: none;
+    background-color: #005fab;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 8px 10px 6px;
+    border-radius: 5px;
+}
+
+/* Popup window styling */
+.popup{
+	display: none;
+	background-color: rgba(55, 55, 55, 0.5);
+	z-index: 10;
+	position:fixed;
+	left:0;
+	right: 0;
+	bottom:0;
+	top:0;
+	margin:0 auto;
+	text-align: center;
+}
+
+.popupdiv{
+	display: inline-block;
+	margin-top:5%;
+	}
+
