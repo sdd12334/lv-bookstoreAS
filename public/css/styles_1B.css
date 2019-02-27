@@ -35,13 +35,14 @@ header{
 }
 
 a, a:visited {
-	color:#000;
+	color:#0196e3;
 	text-decoration:none;
 	outline:none;
+	
 }
 
 a:hover{
-	text-decoration:underline;
+	
 }
 
 a img{
@@ -320,3 +321,9 @@ article{
     width: 100%;
     text-align: center;
 }	
+#search{
+	width:80%;
+}
+#search-icon{
+	width:2%;
+}

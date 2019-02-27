@@ -4,7 +4,8 @@
 @section('content')
     <div class="line"></div>
     <aside>
-      Search Box: <input type="text" name="search" id="search"/>
+      <img id="search-icon" src="/images/search.png" alt="!"/>
+      Search Box: <input type="text" name="search" id="search" placeholder="Please input Book Name or Author"/>
     </aside>
     <div class="line"></div>
     <div class="uper">
@@ -94,16 +95,16 @@
 @endsection
 
 @section('about')
-
+<!--Auout the Bookstore-->
 <div>
   <div class="line"></div>
   <table style="width:100%;"> 
       <!-- geAboutt bookstore information -->    
         <tr>        
           <td><p>Welcome to our online bookstore!</p>
-              <p>We can search the books by book name or author.</p>
+              <p>We can search the books by Book Name or Author.</p>
           </td>
-          <td style="text-align:right;"><img src="/images/reading.jpg" style="width:300px;"/></td>
+          <td style="text-align:right;"><img src="/images/reading.jpg" style="width:200px;"/></td>
         </tr>
   </table>
 </div>
