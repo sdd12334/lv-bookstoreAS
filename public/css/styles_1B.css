@@ -265,8 +265,8 @@ article{
     border-radius: 5px;
 }
 
-/* Popup window styling */
-.popup{
+/* Popup window & img styling */
+.pop-mask{
 	display: none;
 	background-color: rgba(55, 55, 55, 0.5);
 	z-index: 10;
@@ -279,7 +279,7 @@ article{
 	text-align: center;
 }
 
-.popupdiv{
+.img-mask{
 	display: inline-block;
 	margin-top:5%;
 	}

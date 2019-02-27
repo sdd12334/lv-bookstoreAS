@@ -29,7 +29,7 @@
 	$( function() {
 		$( "#datepicker" ).datepicker({dateFormat: "yy-mm-dd"});
 	} );
-	// Setter datepicker options
+	// Set datepicker options
 	$( "#datepicker" ).datepicker( "option", "dateFormat", "yy-mm-dd" );
 </script>
 <!-- Use post method send user request-->

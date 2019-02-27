@@ -41,7 +41,7 @@
         </tbody>
       </table>
     </div>
-    <a href="#">GO UP &uarr</a>
+    <a href="#"> &uarr; GO UP &uarr;</a>
     <script>
       //search box js
       $('#search').on('keyup',function(){// Attach an keyup event handler to #search
@@ -68,25 +68,25 @@
         $(document).on("click",".thumbnail",function(){//.click() will invalid after ajax. Use .on()
           var src=$(this).attr("src");//get "src" of the clicked img
           $(".popupImg").attr("src",src )//put clicked img's src to pop up img
-          $(".popup").fadeIn();//show pop up window
+          $(".pop-mask").fadeIn();//show pop up window
         });
       });
 
       //close pop up window
       $(function(){
-        $(".popup").click(function(){
-          $(".popup").fadeOut();//close pop up window
+        $(".pop-mask").click(function(){
+          $(".pop-mask").fadeOut();//close pop up window
           $(".popupImg").attr("src");//remove picture src
         });
       });     
     </script>
 
     <!-- hidden pop up window -->
-    <div class="popup">   
+    <div class="pop-mask">   
       <!-- mask layer --> 
-      <div class="popupdiv">
+      <div class="img-mask">
         <img class="popupImg" src="/" alt="No Picture"/>
-        <img class="close" src="/images/close.png"/>  
+        <img class="close" src="/images/close.png"/> 
       </div>
     </div>
     
