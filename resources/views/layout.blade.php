@@ -82,6 +82,46 @@
     
     <div class="line"></div>
     
+    <div id="l-sidebar">
+				<div id="nav-list">
+					<div id="item">Home</div>
+					<div id="item">Order</div>
+				
+					<div id="item">
+              <ul class="navbar-nav ml-auto">
+                <!-- Authentication Links -->
+                @guest
+                  
+                  @if (Route::has('register'))
+                    <li class="nav-item">
+                      <a class="nav-link" href="{{ route('login') }}">{{ __('Longin') }}</a>
+                    </li>
+                  @endif
+                  @else
+                    <!-- Show Username of authenticated user  -->
+                    <li class="nav-item dropdown">
+                      <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" >
+                        {{ Auth::user()->name }} <span class="caret"></span>
+                      </a>
+                      <!-- Click to show  logout button-->
+                      <div class="dropdown-menu dropdown-menu-right" >
+                        <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                          {{ __('Logout') }}
+                        </a>
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                          <!-- CSRF Protection  equals to {{ csrf_field() }}-->
+                          @csrf
+                        </form>
+                      </div>
+                    </li>
+                @endguest
+              </ul>
+
+
+          </div>
+				</div>	
+			</div>
+
     <footer>Copyright 2019 Online Book Store</footer>
   </body>
 </html>

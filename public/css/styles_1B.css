@@ -24,7 +24,7 @@ body{
 /* Hyperlink Styles: */
 header{
 	max-width:1140px;
-	margin: 0 auto;
+	margin: 30px auto 0 auto;
 	background-color: rgba(255, 255, 255, 0.9);
 	padding:10 10;
 	-moz-box-shadow:0 1px 1px #333333;
@@ -35,7 +35,7 @@ header{
 }
 
 a, a:visited {
-	color:#0196e3;
+	color:#000;
 	text-decoration:none;
 	outline:none;
 }
@@ -238,6 +238,7 @@ article{
 
 #table-striped{
 	min-width: 500px;
+	font-size: 17px;
 }
 
 /* zebra striping color 1*/
@@ -284,3 +285,38 @@ article{
 	margin-top:5%;
 	}
 
+#l-sidebar{
+	position: fixed;
+	top: 0;
+	width:100%;
+	text-align: center;
+	background-color: #f6f9fa;
+	
+	
+}
+
+#item{
+	
+	line-height: 30px;
+	text-align:center;
+	cursor: pointer;
+	-moz-user-select:none;
+	-webkit-user-select:none;
+	user-select:none;
+	transition: background-color .5s,color .5s;
+	float: left;
+	width: 30%;
+}
+
+#item:hover{
+	background-color:  #00a1d6;
+	color: #fff;
+
+}
+
+.dropdown-menu {
+    position: static;
+    float: none;
+    width: 100%;
+    text-align: center;
+}	
