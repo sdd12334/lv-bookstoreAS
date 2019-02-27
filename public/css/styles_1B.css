@@ -34,14 +34,10 @@ header{
 	border-radius: 15px;
 }
 
-a, a:visited {
+.uper a:visited {
 	color:#0196e3;
 	text-decoration:none;
 	outline:none;
-	
-}
-
-a:hover{
 	
 }
 
@@ -157,6 +153,9 @@ nav, article, nav ul li a,figure{
 	width: 1100px;
 	text-align: center;
 }
+
+
+
 .logo{
 	border:0px;
 	width:180px;
@@ -219,7 +218,11 @@ form {
 	height:100px;
 
 }
-
+a, a:visited {
+	color:#0196e3;
+	text-decoration:none;
+	outline:none;
+}
 article{
 	font-size: 1.35em;
 	background-color: rgba(255, 255, 255, 0.9);
@@ -304,26 +307,43 @@ article{
 	-moz-user-select:none;
 	-webkit-user-select:none;
 	user-select:none;
+	color: #000;
 	transition: background-color .5s,color .5s;
 	float: left;
-	width: 30%;
+	width: 25%;
 }
 
-#item:hover{
+#item:hover, #navbarDropdown:hover{
 	background-color:  #00a1d6;
 	color: #fff;
-
 }
 
 .dropdown-menu {
     position: static;
     float: none;
     width: 100%;
-    text-align: center;
 }	
 #search{
 	width:80%;
 }
 #search-icon{
 	width:2%;
+}
+.nav-item a, .nav-item a:visited{
+	color:#000;
+	text-decoration:none;
+	outline:none;
+	text-align: center;
+}
+#nav-icon{
+	
+	text-align:center;
+	-moz-user-select:none;
+	-webkit-user-select:none;
+	user-select:none;
+	float: left;
+	width: 25%;
+}
+#nav-icon img{
+	height:25px;
 }

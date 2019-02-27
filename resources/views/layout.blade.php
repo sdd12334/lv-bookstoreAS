@@ -27,36 +27,7 @@
             <td class="value"><a href="/contact"><img title="Book Request" class="icon" src="/images/cart.png" alt="Cart image"></a></td> 
             <td class="value"><a href="/login"><img title="Lonin" class="icon" src="/images/login.png" alt="Login image"></a></td> 
             <td class="value"><a href="/home"><img title="Settings" class="icon" src="/images/admin.png" alt="Admin image"></a></td> 
-            <td class="value">
-              <ul class="navbar-nav ml-auto">
-                <!-- Authentication Links -->
-                @guest
-                  
-                  @if (Route::has('register'))
-                    <li class="nav-item">
-                      <a class="nav-link" href="{{ route('login') }}">{{ __('Longin') }}</a>
-                    </li>
-                  @endif
-                  @else
-                    <!-- Show Username of authenticated user  -->
-                    <li class="nav-item dropdown">
-                      <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" >
-                        {{ Auth::user()->name }} <span class="caret"></span>
-                      </a>
-                      <!-- Click to show  logout button-->
-                      <div class="dropdown-menu dropdown-menu-right" >
-                        <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                          {{ __('Logout') }}
-                        </a>
-                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                          <!-- CSRF Protection  equals to {{ csrf_field() }}-->
-                          @csrf
-                        </form>
-                      </div>
-                    </li>
-                @endguest
-              </ul>
-            </td>
+            
           </tr> 
         </table>
       </nav>
@@ -84,6 +55,7 @@
     
     <div id="l-sidebar">
 				<div id="nav-list">
+          <div id="nav-icon"><img src="/images/bookstore-logo.jpg"/></div>
 					<div id="item">Home</div>
 					<div id="item">Order</div>
 				
