@@ -48,7 +48,7 @@
       $('#search').on('keyup',function(){// Attach an keyup event handler to #search
         $value=$(this).val();//get value in the search box
         $.ajax({   //jquery asynchronous HTTP request
-          async: false,     
+          //async: false,     // temporarily lock the browser, disabling any actions while the request is active.
           type : 'get',        
           url : '{{URL::to('search')}}',        
           data:{'search':$value},        
