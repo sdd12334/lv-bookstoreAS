@@ -38,6 +38,7 @@ function currency_translate2(){
 	}
 }		
 </script>
+<h3>Book Information</h3>
 <div class="line"></div>
 <div class="uper">
   @if(session()->get('success'))

@@ -2,6 +2,7 @@
 @extends('layout')
 
 @section('content')
+<h3>Book List</h3>
     <div class="line"></div>
     <aside>
       <img id="search-icon" src="/images/search.png" alt="!"/>

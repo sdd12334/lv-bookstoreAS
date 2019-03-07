@@ -43,7 +43,6 @@
       </article>
 
       <article id="article1">
-        <h3>Book List</h3>
         <div class="container">
           @yield('content')
         </div>
