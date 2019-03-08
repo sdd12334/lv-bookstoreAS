@@ -52,10 +52,10 @@
     <div class="line"></div>
     <div id="l-sidebar">
 				<div id="nav-list">
-          <div id="nav-icon"><img src="/images/bookstore-logo.jpg"/></div>
-					<div id="item"><a class="top-bar" href="/">Home</a></div>
-					<div id="item"><a class="top-bar" href="/contact">Order</a></div>
-					<div id="item">
+          <div id="nav-icon"><img src="/images/bookstore-logo.jpg" alt="No picture"/></div>
+					<div class="item"><a class="top-bar" href="/">Home</a></div>
+					<div class="item"><a class="top-bar" href="/contact">Order</a></div>
+					<div class="item">
               <ul class="navbar-nav ml-auto">
                 <!-- Authentication Links -->
                 @guest

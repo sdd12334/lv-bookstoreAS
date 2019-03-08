@@ -306,7 +306,7 @@ article{
 	
 }
 
-#item{
+.item{
 	
 	line-height: 30px;
 	text-align:center;
@@ -320,7 +320,7 @@ article{
 	width: 25%;
 }
 
-#item:hover, #navbarDropdown:hover{
+.item:hover, #navbarDropdown:hover{
 	background-color:  #00a1d6;
 	color: #fff;
 }

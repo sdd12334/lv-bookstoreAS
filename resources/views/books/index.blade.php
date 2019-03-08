@@ -37,7 +37,7 @@
               <td>{{$book->author}}</td>
               <td class="price">{{$book->price}}</td>
               <td>{{$book->publisher}}</td>
-              <td class="td-img"><img class="thumbnail"src="{{$book->image_url}}"/></td>
+              <td class="td-img"><img class="thumbnail" src="{{$book->image_url}}" alt="No picture"/></td>
             </tr>
           @endforeach
         </tbody>
@@ -89,7 +89,7 @@
       <!-- mask layer --> 
       <div class="img-mask">
         <img class="popupImg" src="/" alt="No Picture"/>
-        <img class="close" src="/images/close.png"/> 
+        <img class="close" src="/images/close.png" alt="No picture"/> 
       </div>
     </div>
     
@@ -106,7 +106,7 @@
           <td><p>Welcome to our online bookstore!</p>
               <p>We can search the books by Book Name or Author.</p>
           </td>
-          <td style="text-align:right;"><img src="/images/reading.jpg" style="width:200px;"/></td>
+          <td style="text-align:right;"><img src="/images/reading.jpg" style="width:200px;" alt="No picture"/></td>
         </tr>
   </table>
 </div>

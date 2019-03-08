@@ -10,8 +10,8 @@
 <link rel="stylesheet" type="text/css" media="screen" href="/css/main.css" /> 
 <link rel="stylesheet" type="text/css" href="/css/product_info.css" /> 
 <link rel="stylesheet" type="text/css" href="/css/960.css" /> 
-<script type="text/javascript" src="/js/jquery-3.3.1.min.js"></script>
-<script type="text/javascript" src="/js/slideshow.js"></script>
+<script src="/js/jquery-3.3.1.min.js"></script>
+<script src="/js/slideshow.js"></script>
 <script>	
 $(document).ready(function() {
 	// (a little sooner than page load)
@@ -71,8 +71,8 @@ function currency_translate2(){
 			<tr style="display:none;">
 				<td class="field">&nbsp;</td>
 				<td class="value">
-					<select id="" name="" id="productInfo_currency_select"></select>
-						<div id="">Exchange Rate is just for reference</div>
+					<select  id="productInfo_currency_select"></select>
+						<div>Exchange Rate is just for reference</div>
 				</td>
 			</tr>
 			<tr>
@@ -96,7 +96,7 @@ function currency_translate2(){
 			<tr>
 				<td class="field" colspan="2">
 					<a href="javascript:;"  id="extraInfo_link"> 
-						<IMG src="/images/extraInfo_arrow.gif" border="0" width="15" height="14" id="extraInfo_img">&nbsp; More information 
+						<IMG src="/images/extraInfo_arrow.gif" border="0" width="15" height="14" id="extraInfo_img" alt="No picture">&nbsp; More information 
 					</a>
 				</td>
 			</tr>	
