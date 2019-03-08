@@ -2,11 +2,7 @@
 @extends('layout')
 
 @section('content')
-<style>
-  .uper {
-    margin-top: 40px;
-  }
-</style>
+
 <link rel="stylesheet" type="text/css" media="screen" href="/css/main.css" /> 
 <link rel="stylesheet" type="text/css" href="/css/product_info.css" /> 
 <link rel="stylesheet" type="text/css" href="/css/960.css" /> 
@@ -131,7 +127,7 @@ function currency_translate2(){
 				</td>
 			</tr> 
 			<tr>
-				<td class="productImg" rowspan="13" colspan="2" align="center">
+				<td class="productImg" rowspan="13" colspan="2" >
 					<div class="container_12" id="wrapper"> 
 						<div class="grid_8" id="content">
 							<div class="grid_6 prefix_1 suffix_1" id="gallery"> 
