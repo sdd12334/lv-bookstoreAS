@@ -19,7 +19,7 @@ class SearchController extends Controller{
         if($request->ajax()){
             $output="";
             $search="";
-            
+            /*
             $title='<table id="table-striped" class="table table-striped tablesorter">
                     <thead>
                         <tr>
@@ -31,6 +31,7 @@ class SearchController extends Controller{
                             <td class="bookImg">Book Image</td>
                         </tr>
                     </thead>';
+            */
             
             $results=DB::table('books')// search in the book table
                         ->where('name','LIKE','%'.$request->search."%") //search book name in table
@@ -53,9 +54,12 @@ class SearchController extends Controller{
                         '</tr>';
 
                 } 
-                $output=$title.$search.'</table>';
+                $output=$search.'</table>';
                 //AJAX response
-                return Response($output);
+                //return Response($output);
+                return response()->json([    //返回 json数据
+                    'tbody'=>$output
+                ]);
 
             }
         }

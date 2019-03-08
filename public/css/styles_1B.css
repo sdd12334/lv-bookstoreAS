@@ -218,11 +218,18 @@ form {
 	height:100px;
 
 }
+.top-bar:visited {
+	color:#000000;
+	text-decoration:none;
+	outline:none;
+}
+
 a, a:visited {
 	color:#0196e3;
 	text-decoration:none;
 	outline:none;
 }
+
 article{
 	font-size: 1.35em;
 	background-color: rgba(255, 255, 255, 0.9);

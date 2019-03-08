@@ -55,8 +55,8 @@
     <div id="l-sidebar">
 				<div id="nav-list">
           <div id="nav-icon"><img src="/images/bookstore-logo.jpg"/></div>
-					<div id="item">Home</div>
-					<div id="item">Order</div>
+					<div id="item"><a class="top-bar" href="/">Home</a></div>
+					<div id="item"><a class="top-bar" href="/contact">Order</a></div>
 				
 					<div id="item">
               <ul class="navbar-nav ml-auto">

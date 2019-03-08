@@ -46,16 +46,17 @@
     <a href="#"> &uarr; GO UP &uarr;</a>
     <script>
       //search box js
-      $('#search').on('keyup',function(){// Attach an keyup event handler to #search
-        $value=$(this).val();//get value in the search box
-        $.ajax({   //jquery asynchronous HTTP request
-          //async: false,     // temporarily lock the browser, disabling any actions while the request is active.
+      $('#search').on('keyup',function(){          // Attach an keyup event handler to #search
+        $value=$(this).val();                      //get value in the search box
+        $.ajax({                                   //jquery asynchronous HTTP request
+          //async: false,                          // temporarily lock the browser, disabling any actions while the request is active.
           type : 'get',        
-          url : '{{URL::to('search')}}',        
+          url : '{{URL::to('search')}}',           //direct to a route with destination of 'search'  
+          dataType:"json",           
           data:{'search':$value},        
-          success:function(data){  //function to be called if the request succeeds      
-            $('.uper').html(data);   //set content of uper div element
-            $("#table-striped").tablesorter();  //initiate jquery plugin Tablesorter   
+          success:function(data){                  //function to be called if the request succeeds      
+            $('#books-table').html(data.tbody);    //put json data in the table
+            $("#table-striped").trigger("update"); //update table after ajax response arrived
           }        
         });                        
       });   
@@ -68,17 +69,17 @@
       //pop up window
       $(function(){
         $(document).on("click",".thumbnail",function(){//.click() will invalid after ajax. Use .on()
-          var src=$(this).attr("src");//get "src" of the clicked img
-          $(".popupImg").attr("src",src )//put clicked img's src to pop up img
-          $(".pop-mask").fadeIn();//show pop up window
+          var src=$(this).attr("src");                 //get "src" of the clicked img
+          $(".popupImg").attr("src",src )              //put clicked img's src to pop up img
+          $(".pop-mask").fadeIn();                     //show pop up window
         });
       });
 
       //close pop up window
       $(function(){
         $(".pop-mask").click(function(){
-          $(".pop-mask").fadeOut();//close pop up window
-          $(".popupImg").attr("src");//remove picture src
+          $(".pop-mask").fadeOut();             //close pop up window
+          $(".popupImg").attr("src");           //remove picture src
         });
       });     
     </script>
