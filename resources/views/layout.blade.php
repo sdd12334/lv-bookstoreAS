@@ -27,7 +27,6 @@
             <td class="value"><a href="/contact"><img title="Book Request" class="icon" src="/images/cart.png" alt="Cart image"></a></td> 
             <td class="value"><a href="/login"><img title="Lonin" class="icon" src="/images/login.png" alt="Login image"></a></td> 
             <td class="value"><a href="/home"><img title="Settings" class="icon" src="/images/admin.png" alt="Admin image"></a></td> 
-            
           </tr> 
         </table>
       </nav>
@@ -51,18 +50,15 @@
     </section>
     
     <div class="line"></div>
-    
     <div id="l-sidebar">
 				<div id="nav-list">
           <div id="nav-icon"><img src="/images/bookstore-logo.jpg"/></div>
 					<div id="item"><a class="top-bar" href="/">Home</a></div>
 					<div id="item"><a class="top-bar" href="/contact">Order</a></div>
-				
 					<div id="item">
               <ul class="navbar-nav ml-auto">
                 <!-- Authentication Links -->
                 @guest
-                  
                   @if (Route::has('register'))
                     <li class="nav-item">
                       <a class="nav-link" href="{{ route('login') }}">{{ __('Longin') }}</a>
@@ -87,8 +83,6 @@
                     </li>
                 @endguest
               </ul>
-
-
           </div>
 				</div>	
 			</div>
